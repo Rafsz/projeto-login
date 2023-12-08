@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* para telas pequenas ver o css mobile first */
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {   
+    /* acho q pra tablet poderia usar já medida menor q 768px, mas essas foram a q o Guanabra usou...   */
+    section#login {
+        width: 90vw;
+        height: 300px;
+        font-size: medium;
+    }
+
+    body, html {
+        background-image: linear-gradient(to top, blueviolet, rgb(83, 28, 133)); /* simulando um dark mode pra telas grandes */
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    section#login > div#imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section#login {
+        width: 990px;
+        height: 370px;
+        font-size: large;
+    }
+
+    body, html {
+        background-image: linear-gradient(to top, rgb(83, 28, 133), rgb(49, 17, 79));
+        /* simulando um dark mode pra telas grandes */
+        height: 100vh;
+        width: 100vw;
+    }
+
+    section#login >div#imagem {
+        float: left;
+        width: 45%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 55%;
+
+    }
+    
+}
+
